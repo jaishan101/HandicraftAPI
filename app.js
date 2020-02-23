@@ -7,7 +7,7 @@ const app = express();
   const productRoutes = require("./api/routes/products");
 const userRoutes = require("./api/routes/users");
 
-mongoose.connect('mongodb://localhost:27017/agridb', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/handicraftdb', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(morgan("dev"));
 app.use('/upload', express.static(__dirname+'/public/uploads'));
